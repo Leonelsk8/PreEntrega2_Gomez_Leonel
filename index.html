@@ -1,227 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ElasticHead con Bootstrap</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="public/css/styles.css">
-</head>
-<body>
-  <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg p-3 text-white">
-      <div class="container-fluid">
-        <a class="navbar-brand fs-3 fw-bold" href="#">Best Food</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            <a class="nav-link" href="#">Menú</a>
-            <a class="nav-link" href="#">Precios</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElasticHead con Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg p-3">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3 fw-bold text-white" href="#">Best Food</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Inicio</a
+              >
+              <a class="nav-link text-white" href="#">Menú</a>
+              <a class="nav-link text-white" href="#">Precios</a>
+            </div>
+          </div>
+          <div>
+            <button type="button" class="btn btn-dark border-1 border-white">Contacto</button>
           </div>
         </div>
-        <div>
-          <button type="button" class="btn btn-dark">Contacto</button>
-        </div>
-      </div>
-    </nav>
-    <h1 class="text-center mt-4 display-3 fw-bold p-4">Catálogo de Comida<br><span class="border-bottom border-warning border-3">sabores irresistibles</span></h1>
-    <h5 class="text-center ps-5 pe-5">Descubre y disfruta de una gran variedad de platos<br><span>directamente en tu hogar</span></h5>
-  </header>
+      </nav>
+    </header>
 
+    <main>
+      <div class="d-flex justify-content-center flex-column divContent">
+        <h1 class="text-center mt-4 display-3 fw-bold p-4 text-white">
+          Catálogo de Comida<br /><span
+            class="border-bottom border-warning border-3"
+            >sabores irresistibles</span
+          >
+        </h1>
+        <h5 class="text-center px-5 text-white">
+          Descubre y disfruta de una gran variedad de platos<br /><span
+            >directamente en tu hogar</span
+          >
+        </h5>
+      </div>
+      <div class="contentSections bg-white">
+        <section class="z-3">
+          <h2 class="text-center p-5 display-5 fw-bold">
+            Deliciosos platos para disfrutar <br />
+            <span>en la comodidad de tu hogar</span>
+          </h2>
+          <div class="container-fluid mt-4">
+            <div class="row">
+              <div class="col-12 col-md-12 col-lg-4">
+                <div class="d-flex justify-content-center mb-4">
+                  <img src="../../images/opc1.jfif" alt="comida" class="w-20 imgCard" />
+                </div>
+                <h3 class="text-center">Variedad de platos</h3>
+                <p class="text-center">
+                  Descubre la amplia variedad de platos que ofrecemos
+                </p>
+              </div>
+              <div class="col-12 col-md-12 col-lg-4">
+                <div class="d-flex justify-content-center mb-4">
+                  <img src="../../images/opc2.jpg" alt="comida" class="w-20 imgCard" />
+                </div>
+                <h3 class="text-center">Entrega rápida</h3>
+                <p class="text-center">
+                  Recibe tu pedido en la comodidad de tu hogar
+                </p>
+              </div>
+              <div class="col-12 col-md-12 col-lg-4">
+                <div class="d-flex justify-content-center mb-4">
+                  <img src="../../images/opc3.jfif" alt="comida" class="w-20 imgCard" />
+                </div>
+                <h3 class="text-center">Calidad garantizada</h3>
+                <p class="text-center">
+                  Nuestros platos están preparados con los mejores ingredientes
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-  <main>
-    <section>
-      <h2 class="text-center p-5 display-5 fw-bold">Deliciosos platos para disfrutar <br> <span>en la comodidad de tu hogar</span></h2>
-      <div class="container-fluid mt-4">
-        <div class="row">
-          <div class="col-12 col-md-12 col-lg-4">
-            <div class="d-flex justify-content-center mb-4"><img src="./images/4.png" alt="comida" class="w-20 imgCard"></div>
-            <h3 class="text-center">Variedad de platos</h3>
-            <p class="text-center">Descubre la amplia variedad de platos que ofrecemos</p>
+        <section class="container-fluid">
+          <h2 class="text-white">
+            Platos que te harán <br />querer más. A la primera 😉
+          </h2>
+          <div
+            class="row pb-5 justify-content-center justify-content-md-evenly"
+          >
+            <div class="blackCard col-10 col-md-5 col-lg-3 d-flex flex-column">
+              <div class="p-4">
+                <img
+                  class="iconImg"
+                  src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0f7b6b400ea995e4703c2_Lightbulb.svg"
+                  alt="comida"
+                />
+              </div>
+              <div class="p-3">
+                <h3 class="text-white-50">Variedad de platos</h3>
+                <p class="text-white-50">
+                  Ofrecemos una amplia variedad de platos para todos los gustos
+                </p>
+              </div>
+            </div>
+            <div class="blackCard col-10 col-md-5 col-lg-3 d-flex flex-column">
+              <div class="p-4">
+                <img
+                  class="iconImg"
+                  src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0f79cc6890e4471094bee_Compass.svg"
+                  alt="entrega"
+                />
+              </div>
+              <div class="p-3">
+                <h3 class="text-white-50">Entrega rápida</h3>
+                <p class="text-white-50">
+                  Entregamos tu pedido directamente en tu hogar
+                </p>
+              </div>
+            </div>
+            <div class="blackCard col-10 col-md-5 col-lg-3 d-flex flex-column">
+              <div class="p-4">
+                <img
+                  class="iconImg"
+                  src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0f7d7877acb08bf02e894_Interface.svg"
+                  alt="calidad"
+                />
+              </div>
+              <div class="p-3">
+                <h3 class="text-white-50">Calidad garantizada</h3>
+                <p class="text-white-50">
+                  Nuestros platos están preparados con los mejores ingredientes
+                </p>
+              </div>
+            </div>
+            <div class="blackCard col-10 col-md-5 col-lg-3 d-flex flex-column">
+              <div class="p-4">
+                <img
+                  class="iconImg"
+                  src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0f7eacd52b1b9ab2b03cb_Measuring.svg"
+                  alt="servicio al cliente"
+                />
+              </div>
+              <div class="p-3">
+                <h3 class="text-white-50">Excelente servicio al cliente</h3>
+                <p class="text-white-50">
+                  Estamos aquí para ayudarte con cualquier pregunta o problema
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-12 col-md-12 col-lg-4">
-            <div class="d-flex justify-content-center mb-4"><img src="./images/3.png" alt="comida" class="w-20 imgCard"></div>
-            <h3 class="text-center">Entrega rápida</h3>
-            <p class="text-center">Recibe tu pedido en la comodidad de tu hogar</p>
-          </div>
-          <div class="col-12 col-md-12 col-lg-4">
-            <div class="d-flex justify-content-center mb-4"><img src="./images/2.png" alt="comida" class="w-20 imgCard"></div>
-            <h3 class="text-center">Calidad garantizada</h3>
-            <p class="text-center">Nuestros platos están preparados con los mejores ingredientes</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="container-fluid">
-      <h2 class="text-white">Platos que te harán <br>querer más. A la primera 😉</h2>
-      <div class="row pb-5 justify-content-center justify-content-md-evenly">
-        <div class="blackCard col-10 col-md-5 col-lg-3 d-flex flex-column">
-          <div class="p-4">
-            <img class="iconImg" src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0f7b6b400ea995e4703c2_Lightbulb.svg" alt="comida">
-          </div>
-          <div class="p-3">
-            <h3 class="text-white-50">Variedad de platos</h3>
-            <p class="text-white-50">Ofrecemos una amplia variedad de platos para todos los gustos</p>
-          </div>
-        </div>
-        <div class="blackCard col-10 col-md-5 col-lg-3 d-flex flex-column">
-          <div class="p-4">
-            <img class="iconImg" src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0f79cc6890e4471094bee_Compass.svg" alt="entrega">
-          </div>
-          <div class="p-3">
-            <h3 class="text-white-50">Entrega rápida</h3>
-            <p class="text-white-50">Entregamos tu pedido directamente en tu hogar</p>
-          </div>
-        </div>
-        <div class="blackCard col-10 col-md-5 col-lg-3 d-flex flex-column">
-          <div class="p-4">
-            <img class="iconImg" src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0f7d7877acb08bf02e894_Interface.svg" alt="calidad">
-          </div>
-          <div class="p-3">
-            <h3 class="text-white-50">Calidad garantizada</h3>
-            <p class="text-white-50">Nuestros platos están preparados con los mejores ingredientes</p>
-          </div>
-        </div>
-        <div class="blackCard col-10 col-md-5 col-lg-3 d-flex flex-column">
-          <div class="p-4">
-            <img class="iconImg" src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0f7eacd52b1b9ab2b03cb_Measuring.svg" alt="servicio al cliente">
-          </div>
-          <div class="p-3">
-            <h3 class="text-white-50">Excelente servicio al cliente</h3>
-            <p class="text-white-50">Estamos aquí para ayudarte con cualquier pregunta o problema</p>
-          </div>
-        </div>
-      </div>s
-    </section>
-    
-    <section>
-      <div class="bgdiv d-flex justify-content-md-center justify-content-lg-between align-items-center">
-        <div class="justify-content-md-center">
-          <h1 class="fw-bold display-5">Formaciones de Figma <br> para empresas</h1>
-          <p class="mt-4">En remoto o presencialmente, formamos a tu equipo en la <br> herramienta más demandada por equipos multidisciplinares: <br> diseño, producto, desarrollo, marketing, etc.
-            <br><br>
-            Somos profesionales en activo y profesores con más de 6 años de <br> experiencia. </p>
-          <button type="button" class="btn btn-dark mt-3 fw-bold">Solicitar Formación</button>
-        </div>
-        <div class="d-none d-lg-flex">
-          <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/604630c827ac06181cdf2a56_FL.svg" alt="imagen">
-        </div>
-      </div>
-    </section>
-    <section class="d-flex flex-column align-items-center">
-      <h1 class="text-center fw-bold pt-3 ps-3 pe-3 display-3">Formamos a los <br> diseñadores del futuro</h1>
-      <h3 class="text-center pb-4 ps-3 pe-3 mt-4">Somos profesores en distintas escuelas, formamos a equipos de <br> empresas y organizaciones workshops con merienda incluida.</h3>
-      <div class="butomContainer mt-3">
-        <a class="butomRounded" href="">Online</a>
-        <a class="butomRounded" href="">Talleres</a>
-        <a class="butomRounded" href="">Escuelas</a>
-        <a class="butomRounded" href="">Empresas</a>
-      </div>
-    </section>
-    <section>
-      <div class="d-flex justify-content-around container-fluid">
-        <div class="row">
-          <div class="d-flex flex-column align-items-center col-lg-4">
-            <a href="#"><img src="./images/vi1.png" alt="imgcard" width="350px" ></a>
-            <h3 class="text-center mt-3"><a href="#">Introducción a Sketch</a></h3>
-            <p class="text-center mt-2">"¡Un curso maravilloso! Samuel es un gran <br> profesor y me gusta que todo el curso es <br> muy práctico y completo , lo recomiendo <br> totalmente." • @cristinavela</p>
-          </div>
-          <div class="d-flex flex-column align-items-center col-lg-4">
-            <a href="#"><img src="./images/v12.png" alt="imgcard" width="350px"></a>
-            <h3 class="text-center mt-3"><a href="#">Introducción a Sketch</a></h3>
-            <p class="text-center mt-2">"¡Un curso maravilloso! Samuel es un gran <br> profesor y me gusta que todo el curso es <br> muy práctico y completo , lo recomiendo <br> totalmente." • @cristinavela</p>
-          </div>
-          <div class="d-flex flex-column align-items-center col-lg-4">
-            <a href="#"><img src="./images/vi3.png" alt="imgcard" width="350px"></a>
-            <h3 class="text-center mt-3"><a href="#">Introducción a Sketch</a></h3>
-            <p class="text-center mt-2">"¡Un curso maravilloso! Samuel es un gran <br> profesor y me gusta que todo el curso es <br> muy práctico y completo , lo recomiendo <br> totalmente." • @cristinavela</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="d-flex align-items-center flex-column">
-      <h1 class="text-center text-white ">Trabajamos con grandes<br>empresas, startups y escuelas</h1>
-      <div>
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619786c39fa798c9217aca1f_logo-randstad-blanco%201.svg" alt="logo" width="140px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197874be2df8c0081ea00a5_Blue.svg" alt="logo" width="140px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619787fbfb1d80e468a9cf97_BNP.svg" alt="logo" width="150px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197871f113b095938e778a7_Vector.svg" alt="logo" width="105px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619787679669eafd03216569_Symbol.svg" alt="logo" width="40px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197848d3228e773f747e831_Logo%20Beka.svg" alt="logo" width="140px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197869ee2df8c80eae9f9e8_ivi-light%201.svg" alt="logo" width="40px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619785b9bbcd73a970202055_Group%2048.svg" alt="logo" width="105px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/61978737d2e01f5977ca9ac7_Header%201500px.svg" alt="logo" width="108px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619787a2f76aeb40683951a5_oup-logo-blue%201.svg" alt="logo" width="113px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619783f9e2df8c47e9e9eee7_Abanca_logo%201.svg" alt="logo" width="95px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197870587b3e830648c8af0_logo-kymco%201.svg" alt="logo" width="105px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197841f2bbea6c40662dde4_Frame-1.svg" alt="logo" width="90px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/61978442f338097c62a3b87d_Frame-3.svg" alt="logo" width="125px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/61978649d502444232fd92ca_Frame-6.svg" alt="logo" width="95px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619787b9733ba150123de401_Meep_Logo_Black%201.svg" alt="logo" width="40px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/61978432365fd465111065f4_Frame-2.svg" alt="logo" width="95px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619788ca6e036a5b8d1ff897_lefevbre.svg" alt="logo" width="113px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619784efab885f291288519b_Frame-4.svg" alt="logo" width="50px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619786633008a85a79ee9c17_Frame-7.svg" alt="logo" width="50px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197867afad720ac1363aeb8_Group.svg" alt="logo" width="50px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197899f4be0593584f5cfd7_Logo%20azul%201.svg" alt="logo" width="95px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197896c2fbb79191af88f09_Frame.svg" alt="logo" width="50px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/61978987f338098071a3d26b_Group.svg" alt="logo" width="40px">
-        <img src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619789db2bbea66308630165_logo-northcamp-school%201.svg" alt="logo" width="40px">
-      </div>
-      <button type="button" class="btn btn-light botB fw-bold">Contactar</button>
-    </section>
-    <section class="pt-5">
-      <div class="d-flex flex-wrap justify-content-evenly">
-        <a href="#">
-          <div class="cardB mb-4 bg-white">
-            <img class="mb-5" src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0fac0e8f71926ede76fe7_Error.svg" alt="icon404">
-            <h3>Mi producto necesita actualizar el diseño de interfaz</h3>
-          </div>
-        </a>
-        <a href="#">
-          <div class="cardB mb-4 bg-white">
-            <img class="mb-5" src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0facaea726f1db7f8052a_Rocket.svg" alt="icon404">
-            <h3>Necesito un prototipo para mi startup</h3>
-          </div>
-        </a>
-        <a href="#">
-          <div class="cardB mb-4 bg-white">
-            <img class="mb-5" src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0fd28449938825c3ce8a4_Growth.svg" alt="icon404">
-            <h3>Quiero incrementar la tasa de conversión de mi plataforma</h3>
-          </div>
-        </a>
-        <a href="#">
-          <div class="cardB mb-4 bg-white">
-            <img class="mb-5" src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0fb21bac1d5a697f5cf5e_Love.svg" alt="icon404">
-            <h3>Busco un diseñador UX/UI para incorporar a mi equipo</h3>
-          </div>
-        </a>
-        <a href="#">
-          <div class="cardB mb-4 bg-white">
-            <img class="mb-5" src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0fb2b4db9e9588f5329a7_Magic.svg" alt="icon404">
-            <h3>Quiero mejorar la usabilidad de mi producto</h3>
-          </div>
-        </a>
-        <a href="#">
-          <div class="cardB mb-4 bg-black">
-            <img class="mb-5 iconInv" src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0fb537e410b31c16b8557_Lemon.svg" alt="icon404">
-            <h3 class="text-white">¿En qué podemos ayudarte?</h3>
-            <p class="text-white">Escribenos, ¡es gratis!</p>
-          </div>
-        </a>
-      </div>
-    </section>
-  </main>
+          s
+        </section>
 
-  <footer>
+        <section>
+          <div
+            class="bgdiv d-flex justify-content-md-center justify-content-lg-between align-items-center"
+          >
+            <div class="justify-content-md-center">
+              <h1 class="fw-bold display-5">
+                Formaciones de Figma <br />
+                para empresas
+              </h1>
+              <p class="mt-4">
+                En remoto o presencialmente, formamos a tu equipo en la <br />
+                herramienta más demandada por equipos multidisciplinares: <br />
+                diseño, producto, desarrollo, marketing, etc. <br /><br />
+                Somos profesionales en activo y profesores con más de 6 años de
+                <br />
+                experiencia.
+              </p>
+              <button type="button" class="btn btn-dark mt-3 fw-bold">
+                Solicitar Formación
+              </button>
+            </div>
+            <div class="d-none d-lg-flex">
+              <img
+                src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/604630c827ac06181cdf2a56_FL.svg"
+                alt="imagen"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="d-flex flex-column align-items-center">
+          <h1 class="text-center fw-bold pt-3 ps-3 pe-3 display-3">
+            Formamos a los <br />
+            diseñadores del futuro
+          </h1>
+          <h3 class="text-center pb-4 ps-3 pe-3 mt-4">
+            Somos profesores en distintas escuelas, formamos a equipos de <br />
+            empresas y organizaciones workshops con merienda incluida.
+          </h3>
+          <div class="butomContainer mt-3">
+            <a class="butomRounded" href="">Online</a>
+            <a class="butomRounded" href="">Talleres</a>
+            <a class="butomRounded" href="">Escuelas</a>
+            <a class="butomRounded" href="">Empresas</a>
+          </div>
+        </section>
+        <section>
+          <div class="d-flex justify-content-around container-fluid">
+            <div class="row">
+              <div class="d-flex flex-column align-items-center col-lg-4">
+                <a href="#"
+                  ><img src="./images/vi1.png" alt="imgcard" width="350px"
+                /></a>
+                <h3 class="text-center mt-3">
+                  <a href="#">Introducción a Sketch</a>
+                </h3>
+                <p class="text-center mt-2">
+                  "¡Un curso maravilloso! Samuel es un gran <br />
+                  profesor y me gusta que todo el curso es <br />
+                  muy práctico y completo , lo recomiendo <br />
+                  totalmente." • @cristinavela
+                </p>
+              </div>
+              <div class="d-flex flex-column align-items-center col-lg-4">
+                <a href="#"
+                  ><img src="./images/v12.png" alt="imgcard" width="350px"
+                /></a>
+                <h3 class="text-center mt-3">
+                  <a href="#">Introducción a Sketch</a>
+                </h3>
+                <p class="text-center mt-2">
+                  "¡Un curso maravilloso! Samuel es un gran <br />
+                  profesor y me gusta que todo el curso es <br />
+                  muy práctico y completo , lo recomiendo <br />
+                  totalmente." • @cristinavela
+                </p>
+              </div>
+              <div class="d-flex flex-column align-items-center col-lg-4">
+                <a href="#"
+                  ><img src="./images/vi3.png" alt="imgcard" width="350px"
+                /></a>
+                <h3 class="text-center mt-3">
+                  <a href="#">Introducción a Sketch</a>
+                </h3>
+                <p class="text-center mt-2">
+                  "¡Un curso maravilloso! Samuel es un gran <br />
+                  profesor y me gusta que todo el curso es <br />
+                  muy práctico y completo , lo recomiendo <br />
+                  totalmente." • @cristinavela
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="d-flex align-items-center flex-column">
+          <h1 class="text-center text-white">
+            Trabajamos con grandes<br />empresas, startups y escuelas
+          </h1>
+          <div>
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619786c39fa798c9217aca1f_logo-randstad-blanco%201.svg"
+              alt="logo"
+              width="140px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197874be2df8c0081ea00a5_Blue.svg"
+              alt="logo"
+              width="140px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619787fbfb1d80e468a9cf97_BNP.svg"
+              alt="logo"
+              width="150px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197871f113b095938e778a7_Vector.svg"
+              alt="logo"
+              width="105px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619787679669eafd03216569_Symbol.svg"
+              alt="logo"
+              width="40px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197848d3228e773f747e831_Logo%20Beka.svg"
+              alt="logo"
+              width="140px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197869ee2df8c80eae9f9e8_ivi-light%201.svg"
+              alt="logo"
+              width="40px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619785b9bbcd73a970202055_Group%2048.svg"
+              alt="logo"
+              width="105px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/61978737d2e01f5977ca9ac7_Header%201500px.svg"
+              alt="logo"
+              width="108px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619787a2f76aeb40683951a5_oup-logo-blue%201.svg"
+              alt="logo"
+              width="113px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619783f9e2df8c47e9e9eee7_Abanca_logo%201.svg"
+              alt="logo"
+              width="95px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197870587b3e830648c8af0_logo-kymco%201.svg"
+              alt="logo"
+              width="105px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197841f2bbea6c40662dde4_Frame-1.svg"
+              alt="logo"
+              width="90px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/61978442f338097c62a3b87d_Frame-3.svg"
+              alt="logo"
+              width="125px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/61978649d502444232fd92ca_Frame-6.svg"
+              alt="logo"
+              width="95px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619787b9733ba150123de401_Meep_Logo_Black%201.svg"
+              alt="logo"
+              width="40px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/61978432365fd465111065f4_Frame-2.svg"
+              alt="logo"
+              width="95px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619788ca6e036a5b8d1ff897_lefevbre.svg"
+              alt="logo"
+              width="113px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619784efab885f291288519b_Frame-4.svg"
+              alt="logo"
+              width="50px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619786633008a85a79ee9c17_Frame-7.svg"
+              alt="logo"
+              width="50px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197867afad720ac1363aeb8_Group.svg"
+              alt="logo"
+              width="50px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197899f4be0593584f5cfd7_Logo%20azul%201.svg"
+              alt="logo"
+              width="95px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/6197896c2fbb79191af88f09_Frame.svg"
+              alt="logo"
+              width="50px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/61978987f338098071a3d26b_Group.svg"
+              alt="logo"
+              width="40px"
+            />
+            <img
+              src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/619789db2bbea66308630165_logo-northcamp-school%201.svg"
+              alt="logo"
+              width="40px"
+            />
+          </div>
+          <button type="button" class="btn btn-light botB fw-bold">
+            Contactar
+          </button>
+        </section>
+        <section class="pt-5">
+          <div class="d-flex flex-wrap justify-content-evenly">
+            <a href="#">
+              <div class="cardB mb-4 bg-white">
+                <img
+                  class="mb-5"
+                  src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0fac0e8f71926ede76fe7_Error.svg"
+                  alt="icon404"
+                />
+                <h3>Mi producto necesita actualizar el diseño de interfaz</h3>
+              </div>
+            </a>
+            <a href="#">
+              <div class="cardB mb-4 bg-white">
+                <img
+                  class="mb-5"
+                  src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0facaea726f1db7f8052a_Rocket.svg"
+                  alt="icon404"
+                />
+                <h3>Necesito un prototipo para mi startup</h3>
+              </div>
+            </a>
+            <a href="#">
+              <div class="cardB mb-4 bg-white">
+                <img
+                  class="mb-5"
+                  src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0fd28449938825c3ce8a4_Growth.svg"
+                  alt="icon404"
+                />
+                <h3>
+                  Quiero incrementar la tasa de conversión de mi plataforma
+                </h3>
+              </div>
+            </a>
+            <a href="#">
+              <div class="cardB mb-4 bg-white">
+                <img
+                  class="mb-5"
+                  src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0fb21bac1d5a697f5cf5e_Love.svg"
+                  alt="icon404"
+                />
+                <h3>Busco un diseñador UX/UI para incorporar a mi equipo</h3>
+              </div>
+            </a>
+            <a href="#">
+              <div class="cardB mb-4 bg-white">
+                <img
+                  class="mb-5"
+                  src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0fb2b4db9e9588f5329a7_Magic.svg"
+                  alt="icon404"
+                />
+                <h3>Quiero mejorar la usabilidad de mi producto</h3>
+              </div>
+            </a>
+            <a href="#">
+              <div class="cardB mb-4 bg-black">
+                <img
+                  class="mb-5 iconInv"
+                  src="https://uploads-ssl.webflow.com/5ece3bf4585e434874c2a96b/5ef0fb537e410b31c16b8557_Lemon.svg"
+                  alt="icon404"
+                />
+                <h3 class="text-white">¿En qué podemos ayudarte?</h3>
+                <p class="text-white">Escribenos, ¡es gratis!</p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
 
-  </footer>
+    <footer></footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
