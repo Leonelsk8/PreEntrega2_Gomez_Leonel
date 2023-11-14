@@ -31,8 +31,8 @@ main {
   border-radius: 100%;
 }
 
-main > section:nth-child(2){
-  background-color: black;
+.contenResume{
+  background: repeating-linear-gradient(to right, #272525 0%, #272525 35%, #c77e00 35%, #c77e00 100%)
 }
 
 main > section:nth-child(2) h2{
