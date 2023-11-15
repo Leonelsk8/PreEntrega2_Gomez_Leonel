@@ -26,6 +26,14 @@ main {
   }
 }
 
+.bgBackTwo{
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../images/section1.jfif');
+  height: 100vh;
+  position:sticky;
+  top: 0;
+  z-index: -1;
+}
+
 .imgCard{
   height: 160px;
   border-radius: 100%;
@@ -43,8 +51,8 @@ main > section:nth-child(2) h2{
 
 .iconImg{
   filter: invert(100%);
-  opacity: 0.6;
   width: 40px;
+  border-radius: 100%;
 }
 
 .blackCard{
@@ -66,15 +74,15 @@ main > section:nth-child(2) h2{
 }
 
 .butomRounded:hover{
-  background-color: #fff;
+  background-color: #c77e00;
   border-radius: 200px;
   color: black;
 }
 
 .bgdiv{
-  background-color: #dedcdc !important;
-  margin: 100px 50px;
-  padding: 40px 200px 40px 65px;
+  background-color: #00000087 !important;
+  border-radius: 10px;
+  height: 50vh;
 }
 
 main > section:nth-child(3) p{
