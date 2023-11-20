@@ -15,14 +15,26 @@ main {
   background-color: #f8f8f8;
   .divContent{
     height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../images/wallpaper2.jpg');
     background-size: cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../images/homeImage.jfif');
+  background-position: center;
     position: sticky;
     top: 0;
     z-index: -1;
   }
   .contentSections{
     z-index: 1;
+  }
+}
+
+.content-catalogo div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
   }
 }
 

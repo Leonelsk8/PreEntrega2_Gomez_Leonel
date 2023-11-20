@@ -2,22 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Best Food</title>
+    <title>Best Food - Menu</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="public/css/styles.css" />
+    <link rel="stylesheet" href="../public/css/menu.css" />
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg p-3">
         <div class="container-fluid">
-          <a class="navbar-brand fs-3 fw-bold text-white" href="#">Best Food</a>
+          <a class="navbar-brand fs-3 fw-bold text-white" href="../index.html"
+            >Best Food</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -34,10 +35,13 @@
             id="navbarNav"
           >
             <div class="navbar-nav">
-              <a class="nav-link active text-white fw-bold" aria-current="page" href="#"
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="../index.html"
                 >Inicio</a
               >
-              <a class="nav-link text-white" href="./pages/menu.html">Menú</a>
+              <a class="nav-link text-white fw-bold" href="#">Menú</a>
               <a class="nav-link text-white" href="#">Precios</a>
             </div>
           </div>
@@ -53,66 +57,44 @@
     <main>
       <div class="d-flex justify-content-center flex-column divContent">
         <h1 class="text-center mt-4 display-3 fw-bold p-4 text-white">
-          Catálogo de Comida<br /><span
-            class="border-bottom border-warning border-5"
-            >sabores irresistibles</span
+          <span class="border-bottom border-warning border-5"
+            >Descubre nuestro menú</span
           >
         </h1>
         <h5 class="text-center px-5 text-white">
-          Descubre y disfruta de una gran variedad de platos<br /><span
-            >directamente en tu hogar</span
-          >
+          Navega por nuestro gran catálogo de comida<br />
         </h5>
       </div>
 
       <div class="contentSections">
-        <section class="z-3 bg-white pb-5">
-          <h2 class="text-center p-5 display-5 fw-bold">
-            Deliciosos platos para disfrutar <br />
-            <span>en la comodidad de tu hogar</span>
-          </h2>
-          <div class="container-fluid mt-4">
-            <div class="row">
-              <div class="col-12 col-md-12 col-lg-4">
-                <div class="d-flex justify-content-center mb-4">
-                  <img
-                    src="../../images/opc1.jfif"
-                    alt="comida"
-                    class="w-20 imgCard"
-                  />
-                </div>
-                <h3 class="text-center">Variedad de platos</h3>
-                <p class="text-center">
-                  Descubre la amplia variedad de platos que ofrecemos
-                </p>
-              </div>
-              <div class="col-12 col-md-12 col-lg-4">
-                <div class="d-flex justify-content-center mb-4">
-                  <img
-                    src="../../images/opc2.jpg"
-                    alt="comida"
-                    class="w-20 imgCard"
-                  />
-                </div>
-                <h3 class="text-center">Entrega rápida</h3>
-                <p class="text-center">
-                  Recibe tu pedido en la comodidad de tu hogar
-                </p>
-              </div>
-              <div class="col-12 col-md-12 col-lg-4">
-                <div class="d-flex justify-content-center mb-4">
-                  <img
-                    src="../../images/opc3.jfif"
-                    alt="comida"
-                    class="w-20 imgCard"
-                  />
-                </div>
-                <h3 class="text-center">Calidad garantizada</h3>
-                <p class="text-center">
-                  Nuestros platos están preparados con los mejores ingredientes
-                </p>
-              </div>
-            </div>
+        <section class="z-3 bg-white row py-5 content-catalogo px-0 m-0">
+          <div class="col-6 border-2 border-end border-warning py-2">
+            <h3>Hamburguesas</h3>
+          </div>
+          <div class="col-6 py-2">
+            <img src="../../../images/hamburguesas.jfif" alt="categoria-haburguesa" />
+          </div>
+          <div class="col-6 border-2 border-end border-warning py-2">
+            <img src="../../../images/pizzas.jfif" alt="categoria-pizza" />
+          </div>
+          <div class="col-6 py-2"><h3>Pizzas</h3></div>
+          <div class="col-6 border-2 border-end border-warning py-2">
+            <h3>Pastas</h3>
+          </div>
+          <div class="col-6 py-2">
+            <img src="../../../images/pastas.jfif" alt="categoria-pastas" />
+          </div>
+          <div class="col-6 border-2 border-end border-warning py-2">
+            <img src="../../../images/ensladas.jfif" alt="categoria-pastas" />
+          </div>
+          <div class="col-6 py-2">
+            <h3>Ensaladas</h3>
+          </div>
+          <div class="col-6 border-2 border-end border-warning py-2">
+            <h3>Carnes</h3>
+          </div>
+          <div class="col-6 py-2">
+            <img src="../../../images/carne.webp" alt="categoria-pastas" />
           </div>
         </section>
 
@@ -124,7 +106,7 @@
                 <div class="p-4">
                   <img
                     class="iconImg"
-                    src="../../images/icon3.png"
+                    src="../../../images/icon3.png"
                     alt="comida"
                   />
                 </div>
@@ -142,7 +124,7 @@
                 <div class="p-4">
                   <img
                     class="iconImg"
-                    src="../../images/icon1.jpg"
+                    src="../../../images/icon1.jpg"
                     alt="entrega"
                   />
                 </div>
@@ -159,7 +141,7 @@
                 <div class="p-4">
                   <img
                     class="iconImg"
-                    src="../../images/icon2.png"
+                    src="../../../images/icon2.png"
                     alt="calidad"
                   />
                 </div>
@@ -176,7 +158,7 @@
                 <div class="p-4">
                   <img
                     class="iconImg"
-                    src="../../images/icon4.png"
+                    src="../../../images/icon4.png"
                     alt="servicio al cliente"
                   />
                 </div>
@@ -210,13 +192,13 @@
                 la mejor calidad y sabor en cada plato. <br /><br />
                 Contamos con años de experiencia en la industria de la comida.
               </p>
-              <a type="button" class="btn btn-dark mt-3 fw-bold" href="./pages/menu.html">
+              <button type="button" class="btn btn-dark mt-3 fw-bold">
                 Ver Menú
-              </a>
+              </button>
             </div>
             <div class="d-none d-lg-block h-100 rounded-4 overflow-hidden">
               <img
-                src="../../images/burguer.jpg"
+                src="../../../images/burguer.jpg"
                 alt="comida"
                 class="burguerImage h-100 w-auto"
               />
@@ -245,7 +227,7 @@
               <div class="d-flex flex-column align-items-center col-lg-4">
                 <a href="#"
                   ><img
-                    src="../../images/person2.jfif"
+                    src="../../../images/person2.jfif"
                     alt="plato"
                     width="350px"
                     class="rounded-4 border"
@@ -264,7 +246,7 @@
               <div class="d-flex flex-column align-items-center col-lg-4">
                 <a href="#"
                   ><img
-                    src="../../images/person1.jfif"
+                    src="../../../images/person1.jfif"
                     alt="plato"
                     width="350px"
                     class="rounded-4 border"
@@ -282,7 +264,7 @@
               <div class="d-flex flex-column align-items-center col-lg-4">
                 <a href="#"
                   ><img
-                    src="../../images/person3.webp"
+                    src="../../../images/person3.webp"
                     alt="plato"
                     width="350px"
                     class="rounded-4 border"
@@ -329,7 +311,7 @@
           <div class="d-flex flex-column">
             <a class="d-flex justify-content-center align-items-center mb-3">
               <img
-                src="../../images/whatsapp.svg"
+                src="../../../images/whatsapp.svg"
                 alt="whatsappLogo"
                 class="me-2 iconInv"
                 style="width: 25px"
@@ -338,7 +320,7 @@
             </a>
             <a class="d-flex justify-content-center align-items-center mb-3">
               <img
-                src="../../images/twitter.svg"
+                src="../../../images/twitter.svg"
                 alt="twitterLogo"
                 class="me-2 iconInv"
                 style="width: 25px"
@@ -347,7 +329,7 @@
             </a>
             <a class="d-flex justify-content-center align-items-center mb-3">
               <img
-                src="../../images/facebook.svg"
+                src="../../../images/facebook.svg"
                 alt="facebookLogo"
                 class="me-2 iconInv"
                 style="width: 25px"
@@ -356,7 +338,7 @@
             </a>
             <a class="d-flex justify-content-center align-items-center">
               <img
-                src="../../images/instagram.svg"
+                src="../../../images/instagram.svg"
                 alt="instagramLogo"
                 class="me-2 iconInv"
                 style="width: 25px"
